@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Múltiples Acevedo Enterprises</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #003366;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 400px;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .hero h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+        .hero button {
+            padding: 10px 20px;
+            font-size: 20px;
+            margin-top: 20px;
+            background-color: #228B22;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            width: 30%;
+            margin: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .service img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Servicios Múltiples Acevedo Enterprises</h1>
+        <p>Tu hogar en buenas manos</p>
+    </header>
+    <nav>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#services">Servicios</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+    <div class="hero">
+        <h1>Todos los Servicios que Necesitas, en un Solo Lugar</h1>
+        <button>Solicitar Servicio</button>
+        <button>Ver Servicios</button>
+    </div>
+    <div class="content">
+        <section id="about">
+            <h2>Nuestra Historia</h2>
+            <p>Fundada en 2024, Servicios Múltiples Acevedo Enterprises ha estado proporcionando servicios domésticos de alta calidad y confianza.</p>
+        </section>
+        <section id="services" class="services">
+            <h2>Servicios</h2>
+            <div class="service">
+                <h3>Plomería</h3>
+                <img src="plomeria.jpg" alt="Plomería">
+                <p>Soluciones rápidas y efectivas para cualquier problema de plomería en tu hogar.</p>
+            </div>
+            <div class="service">
+                <h3>Electricidad</h3>
+                <img src="electricidad.jpg" alt="Electricidad">
+                <p>Instalaciones y reparaciones eléctricas seguras y profesionales.</p>
+            </div>
+            <div class="service">
+                <h3>Limpieza</h3>
+                <img src="limpieza.jpg" alt="Limpieza">
+                <p>Limpieza profunda y mantenimiento para mantener tu hogar impecable.</p>
+            </div>
+            <div class="service">
+                <h3>Chef a Domicilio</h3>
+                <img src="chef.jpg" alt="Chef a Domicilio">
+                <p>Disfruta de una experiencia culinaria única en la comodidad de tu hogar.</p>
+            </div>
+            <div class="service">
+                <h3>Ebanistas</h3>
+                <img src="ebanistas.jpg" alt="Ebanistas">
+                <p>Muebles y estructuras de madera hechos a medida y con acabados perfectos.</p>
+            </div>
+            <div class="service">
+                <h3>Herreros</h3>
+                <img src="herreros.jpg" alt="Herreros">
+                <p>Trabajo en metal de alta calidad para puertas, ventanas y más.</p>
+            </div>
+            <div class="service">
+                <h3>Cerrajeros</h3>
+                <img src="cerrajeros.jpg" alt="Cerrajeros">
+                <p>Soluciones rápidas y seguras para cualquier problema de cerraduras.</p>
+            </div>
+            <div class="service">
+                <h3>Pintores</h3>
+                <img src="pintores.jpg" alt="Pintores">
+                <p>Pintura interior y exterior con acabados profesionales.</p>
+            </div>
+            <div class="service">
+                <h3>Reparación de Electrodomésticos</h3>
+                <img src="reparacion.jpg" alt="Reparación de Electrodomésticos">
+                <p>Reparación eficiente de neveras, estufas, aires acondicionados y otros electrodomésticos.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Teléfono: 809 218 8222 (WhatsApp)</p>
+            <p>Teléfono: 829 869 6001</p>
+            <p>Teléfono: 809 388 6195</p>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                <label for="service">Tipo de Servicio:</label>
+                <select id="service" name="service" required>
+                    <option value="plumbing">Plomería</option>
+                    <option value="electricity">Electricidad</option>
+                    <option value="cleaning">Limpieza</option>
+                    <option value="chef">Chef a Domicilio</option>
+                    <option value="carpentry">Ebanistas</option>
+                    <option value="blacksmith">Herreros</option>
+                    <option value="locksmith">Cerrajeros</option>
+                    <option value="painting">Pintores</option>
+                    <option value="appliance_repair">Reparación de Electrodomésticos</option>
+                </select><br><br>
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                <button type="submit">Enviar Solicitud</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>© 2024 Servicios Múltiples Acevedo Enterprises. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
